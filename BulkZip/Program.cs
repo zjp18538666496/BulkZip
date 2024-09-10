@@ -27,7 +27,7 @@ class Program
                 string zipDestinationFolderPath = config.ZipDestinationFolderPath;
                 string destinationFolderPath = config.DestinationFolderPath;
                 // 压缩包名称
-                string zipFileName = getFileName(config.fileName);
+                string zipFileName = GetFileName(config.FileName);
                 // 压缩包完整路径
                 string zipFilePath = Path.Combine(zipDestinationFolderPath, zipFileName);
                 Console.WriteLine($"处理配置: {config.Name}");
@@ -90,7 +90,7 @@ class Program
                             // 如果目标目录不存在，则创建
                             if (!Directory.Exists(destDir))
                             {
-                                Directory.CreateDirectory(destDir);
+                                if (destDir != null) Directory.CreateDirectory(destDir);
                             }
 
                             // 复制文件到目标目录
@@ -184,7 +184,7 @@ class Program
         }
     }
 
-    static string getFileName(string str)
+    static string GetFileName(string str)
     {
         string fileName;
         Match match = Regex.Match(str, @"\[(.*?)\]");
@@ -225,7 +225,7 @@ class Config
     /// <summary>
     /// 文件名称
     /// </summary>
-    public string fileName { get; set; }
+    public string FileName { get; set; }
     /// <summary>
     /// 源文件夹路径
     /// </summary>
@@ -242,7 +242,6 @@ class Config
     /// 虚拟文件夹路径
     /// </summary>
     public string DestinationFolderPath { get; set; }
-
     /// <summary>
     /// 是否包含子文件夹
     /// </summary>
