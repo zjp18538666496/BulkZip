@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.34729.46
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BulkZip", "BulkZip\BulkZip.csproj", "{B9689C16-3F9C-4447-981F-0BE12151555D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B9689C16-3F9C-4447-981F-0BE12151555D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B9689C16-3F9C-4447-981F-0BE12151555D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B9689C16-3F9C-4447-981F-0BE12151555D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B9689C16-3F9C-4447-981F-0BE12151555D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {68B76EFD-4E41-40C6-ABB3-8FCCD364A594}
+	EndGlobalSection
+EndGlobal
